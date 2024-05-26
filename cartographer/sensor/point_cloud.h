@@ -19,7 +19,7 @@
 
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "cartographer/sensor/proto/sensor.pb.h"
 #include "cartographer/sensor/rangefinder_point.h"
 #include "cartographer/transform/rigid_transform.h"

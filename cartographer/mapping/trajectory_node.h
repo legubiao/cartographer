@@ -20,7 +20,7 @@
 #include <memory>
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "absl/types/optional.h"
 #include "cartographer/common/time.h"
 #include "cartographer/mapping/proto/trajectory_node_data.pb.h"

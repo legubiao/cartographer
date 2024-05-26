@@ -20,7 +20,7 @@
 #include <iterator>
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "cartographer/common/port.h"
 #include "cartographer/sensor/point_cloud.h"
 #include "cartographer/sensor/proto/sensor.pb.h"

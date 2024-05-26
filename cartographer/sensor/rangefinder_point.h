@@ -19,7 +19,7 @@
 
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "cartographer/sensor/proto/sensor.pb.h"
 #include "cartographer/transform/transform.h"
 #include "glog/logging.h"

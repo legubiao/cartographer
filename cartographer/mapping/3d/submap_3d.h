@@ -21,7 +21,7 @@
 #include <string>
 #include <vector>
 
-#include "Eigen/Geometry"
+#include "eigen3/Eigen/Geometry"
 #include "cartographer/common/port.h"
 #include "cartographer/mapping/3d/hybrid_grid.h"
 #include "cartographer/mapping/3d/range_data_inserter_3d.h"

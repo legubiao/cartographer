@@ -19,8 +19,8 @@
 
 #include <cmath>
 
-#include "Eigen/Core"
-#include "Eigen/Geometry"
+#include "eigen3/Eigen/Core"
+#include "eigen3/Eigen/Geometry"
 #include "cartographer/common/math.h"
 #include "cartographer/transform/proto/transform.pb.h"
 #include "cartographer/transform/rigid_transform.h"

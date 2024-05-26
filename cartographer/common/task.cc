@@ -96,9 +96,19 @@ void Task::Execute() {
     work_item_();
   }
 
-  absl::MutexLock locker(&mutex_);
-  state_ = COMPLETED;
-  for (Task* dependent_task : dependent_tasks_) {
+  // absl::MutexLock locker(&mutex_);
+  // state_ = COMPLETED;
+  // for (Task* dependent_task : dependent_tasks_) {
+  //   dependent_task->OnDependenyCompleted();
+  // }
+  std::vector<Task*> dependent_tasks;
+  {
+    absl::MutexLock locker(&mutex_);
+    state_ = COMPLETED;
+    dependent_tasks = std::vector<Task*>(dependent_tasks_.begin(), dependent_tasks_.end());
+  }
+
+  for (Task* dependent_task : dependent_tasks) {
     dependent_task->OnDependenyCompleted();
   }
 }

@@ -23,7 +23,7 @@
 #include <utility>
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "absl/memory/memory.h"
 #include "cartographer/common/math.h"
 #include "cartographer/common/port.h"

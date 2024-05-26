@@ -20,7 +20,7 @@
 #include <cmath>
 #include <vector>
 
-#include "Eigen/Core"
+#include "eigen3/Eigen/Core"
 #include "cartographer/common/port.h"
 #include "ceres/ceres.h"
 
